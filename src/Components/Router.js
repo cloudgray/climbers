@@ -16,8 +16,8 @@ export default () => (
       <Header />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/centers" exact component={Home} />
-        <Route path="/community" exact component={Home} />
+        <Route path="/centers" exact component={Centers} />
+        <Route path="/community" exact component={Community} />
       </Switch>
     </>
   </Router>

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Parallax, Background } from "react-parallax";
 import Helmet from "react-helmet";
-import Loader from "../../Components/Loader";
+import Loader from "Components/Loader";
 
 const Container = styled.div`
   padding: 0;
@@ -17,7 +17,7 @@ const TextBox = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 10rem;
-  font-family: "Tiza";
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: white;
   z-index: 3;
   text-align: center;
@@ -47,7 +47,7 @@ const HomePresenter = ({ loading, error }) => (
         </Helmet>
         <Parallax
           blur={{ min: -15, max: 15 }}
-          bgImage={require("./climbing1.jpg")}
+          bgImage={require("assets/bg-images/climbing1.jpg")}
           bgImageAlt="CLIMBERS"
           strength={100}
         >
@@ -58,7 +58,7 @@ const HomePresenter = ({ loading, error }) => (
         </Parallax>
         <Parallax
           blur={{ min: -15, max: 15 }}
-          bgImage={require("./climbing1.jpg")}
+          bgImage={require("assets/bg-images/climbing1.jpg")}
           bgImageAlt="CLIMBERS"
           strength={100}
         >
